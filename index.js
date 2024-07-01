@@ -366,34 +366,87 @@
 
 // Status
 
-let Status = 200;
+// let Status = 200;
 
-switch (Status) {
-    case 200:
-        console.log("Status OK");
-        break;  
-    case 201:
-        console.log("Created");
-        break;
-    case 301:
-        console.log("Moved Permanently");
-        break;
-    case 400:
-        console.log("bad request");
-    case 401:
-        console.log("Unauthorized");
-        break;
-    case 403:
-        console.log("Forbidden");
-        break;
-    case 404:
-        console.log("Not Found");
-        break;
-    case 500:
-        console.log("Internal Server Error");
-        break;
-    default:
-        console.log("Unknow Status Code");
-}
+// switch (Status) {
+//     case 200:
+//         console.log("Status OK");
+//         break;  
+//     case 201:
+//         console.log("Created");
+//         break;
+//     case 301:
+//         console.log("Moved Permanently");
+//         break;
+//     case 400:
+//         console.log("bad request");
+//     case 401:
+//         console.log("Unauthorized");
+//         break;
+//     case 403:
+//         console.log("Forbidden");
+//         break;
+//     case 404:
+//         console.log("Not Found");
+//         break;
+//     case 500:
+//         console.log("Internal Server Error");
+//         break;
+//     default:
+//         console.log("Unknow Status Code");
+// }
 
-console.log("finished");
+
+//  loop
+
+// for(let i = 0; i <=10;i++){
+//     console.log("Hello World"+i);
+// }
+// for(let i=1;i<=10;i++){
+//     console.log(`2*${i}=${2*i}`);
+// }
+// for(let i=1;i<=25;i++){
+//     if (i%2 ===0){
+//         console.log(`the even no is ${i}`);
+//     }else{
+
+//         console.log(`the odd no is ${i}`);
+//     }
+// }
+
+
+// array
+
+// const arr = [3, 4, 5, 6, 7];
+
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+// }
+
+// console.log(`sum: ${sum}`);
+
+// while loop
+
+// let i = 0;
+// while (i <=10) {
+//     console.log(`Hello World ${i}`);
+//     i++;
+// }
+
+
+
+// do while
+// i=0;
+// do{
+//     console.log(`Hello World$
+//         {i}`);
+//     i++
+// }while(i<10);   
+
+
+const arr =[4,5,6,7,8,9,10,11,12];
+console.log(arr);
+console.log(arr[4]);
+console.log(typeof arr);
