@@ -237,3 +237,161 @@
 // delete obj.age;
 // console.log(obj);
 
+// let email = "ram@gmail.com";
+// let password = "joking";
+
+// if (email === "ram@gmail.com" && password === "joking"){
+//     console.log("Login Successful");
+// }else {
+//     console.log("Login Failed");
+// }
+
+//  see grade check
+
+// let grade = 85;
+
+// if(grade >=90 ){
+//     console.log("Grade: A+");
+// }else if(grade >=80){
+//     console.log("grade A");
+// }else if(grade >=70){
+//     console.log("Grade B+");
+// }else if(grade >=60){
+//     console.log("Grade B");
+// }else if(grade >=50){
+//     console.log("Grade C");
+// }else if(grade >=40){
+//     console.log("Grade D");
+// }else{
+//     console.log("Failed");
+// }
+
+
+// let weather="Cloudy";
+
+// if(weather=="Cloudy"){
+//     console.log("weather is cloudy");
+// }else if(weather == "rainy"){
+//     console.log("weather is rainy");
+// }else if (weather == "summer"){
+//     console.log("weather is summer");
+// }else if (weather == "winter"){
+//     console.log("weather is winter");
+// }else {
+//     console.log("weather is not defined ");
+// }
+
+// Switch
+
+// let role = "Super admin";
+
+// switch (role) {
+//     case "buyer":
+//         console.log("you can only buy products");
+        
+//         break;
+//     case "seller":
+//         console.log("You cans sell produvts");
+
+//     case "admin":
+//         console.log("You can add products");
+//         break;
+//     case "Super admin":
+//         console.log("You can do everything");
+//         break;
+
+//     default:
+//         console.log("Invalid role")
+//         break;
+// }
+
+// let day = 1;
+
+// switch(day){
+//     case 1 :
+//         console.log("Sunday");
+//         break;
+//     case 2 :
+//         console.log("Monday");
+//         break;
+//     case 3:
+//         console.log("Tuesday");
+//         break;
+//     case 4 :
+//         console.log("wednesday");
+//         break;
+//     case 5:
+//         console.log("Thursday");
+//         break;
+//     case 6 :
+//         console.log("Friday");
+//         break;
+//     case 7:
+//         console.log("Saturday");
+//         break;
+//     default :
+//     console.log("Invalid day");
+// }
+
+
+// let date = new Date().getDay();
+// console.log(date);
+
+// switch(date){
+//     case 0 :
+//         console.log("today is Sunday");
+//         break;
+//     case 1 :
+//         console.log("today is Monday");
+//         break;
+//     case 2:
+//         console.log("today is Tuesday");
+//         break;
+//     case 3 :
+//         console.log("today is wednesday");
+//         break;
+//     case 4 :
+//         console.log("today is Thursday");
+//         break;
+//     case 5 :
+//         console.log("today is Friday");
+//         break;
+//     case 6 :
+//         console.log("today is Saturday");
+//         break;
+//     default :
+//     console.log("Invalid day");
+
+// }
+
+// Status
+
+let Status = 200;
+
+switch (Status) {
+    case 200:
+        console.log("Status OK");
+        break;  
+    case 201:
+        console.log("Created");
+        break;
+    case 301:
+        console.log("Moved Permanently");
+        break;
+    case 400:
+        console.log("bad request");
+    case 401:
+        console.log("Unauthorized");
+        break;
+    case 403:
+        console.log("Forbidden");
+        break;
+    case 404:
+        console.log("Not Found");
+        break;
+    case 500:
+        console.log("Internal Server Error");
+        break;
+    default:
+        console.log("Unknow Status Code");
+}
