@@ -446,7 +446,124 @@
 // }while(i<10);   
 
 
-const arr =[4,5,6,7,8,9,10,11,12];
-console.log(arr);
-console.log(arr[4]);
-console.log(typeof arr);
+// const arr =[4,5,6,7,8,9,10,11,12,4];
+// console.log(arr);
+// console.log(arr[4]);
+// console.log(typeof arr);
+
+
+// Array
+
+// let ans=[3,45,4,5,"apple khalo friends"]; // data structure
+
+// console.log(ans[4]); 
+// console.log(ans.length); // length of array
+
+// const arr = [3,6,5,89,5,5,];
+// console.log(arr.length); // length of array
+
+//push
+
+// const arr = [5,6,7,8,9];
+// console.log(arr.push(99));
+// // console.log(arr);
+
+// //pop
+
+// console.log(arr.pop());
+// // console.log(arr);
+
+// //shift
+
+// console.log(arr.shift(5));
+// // console.log(arr);
+
+// //unshift
+
+// console.log(arr.unshift(1));
+// // console.log(arr);
+
+
+// splice
+// const arr =[4,5,6,7,8,9,10,11,12];
+// console.log(arr.splice(1, 3));
+
+// includes
+// console.log(arr.includes(109));
+
+// const output = ["Hello","Javascript","is","Fun"];
+// console.log(output);
+// console.log(output.join(" "));
+
+
+// splice
+
+// let result = arr.splice(1,4);
+// console.log(result);
+
+// // index of
+// let output = arr.indexOf(4);
+// console.log(output);
+
+// // last index of
+
+// let output1 = arr.lastIndexOf(4);
+// console.log(output1);
+
+
+
+// let arr = [];
+// let sum = 0;
+
+// for(let i=1;i<10;i++)
+// {
+// arr.push(i);
+
+// }
+// for (let i=1; i<arr.length;i++){
+//     sum += arr[i];
+    
+// }
+// let result = sum*2;
+// console.log(sum);
+
+
+// object
+
+const person = {
+    name: "Jatin",
+    age:20,
+    occupation:"college",
+    education:"Bca",
+    ismarried: "forever single",
+    
+    address: {
+        street: "tahachal",
+        city: "Kathamndu",
+        state: "Kathmandu",
+
+        province:{
+            name: "Bagmati",
+            population: 19000000,
+            country: "Nepal"
+        }
+    },
+    
+    greet:function(){
+        console.log(`Hello my name is ${this.name}`);
+    }
+
+};
+
+const{
+    name,
+    age,
+    occupation,
+    education,
+    ismarried,
+    address
+}=person;
+console.log(person.address.street);
+console.log(person.address);
+person.greet();
+// person.address().street();
