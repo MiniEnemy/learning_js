@@ -530,40 +530,160 @@
 
 // object
 
-const person = {
-    name: "Jatin",
-    age:20,
-    occupation:"college",
-    education:"Bca",
-    ismarried: "forever single",
+// const person = {
+//     name: "Jatin",
+//     age:20,
+//     occupation:"college",
+//     education:"Bca",
+//     ismarried: "forever single",
     
-    address: {
-        street: "tahachal",
-        city: "Kathamndu",
-        state: "Kathmandu",
+//     address: {
+//         street: "tahachal",
+//         city: "Kathamndu",
+//         state: "Kathmandu",
 
-        province:{
-            name: "Bagmati",
-            population: 19000000,
-            country: "Nepal"
-        }
-    },
+//         province:{
+//             name: "Bagmati",
+//             population: 19000000,
+//             country: "Nepal"
+//         }
+//     },
     
-    greet:function(){
-        console.log(`Hello my name is ${this.name}`);
-    }
+//     greet:function(){
+//         console.log(`Hello my name is ${this.name}`);
+//     }
 
-};
+// };
 
-const{
-    name,
-    age,
-    occupation,
-    education,
-    ismarried,
-    address
-}=person;
-console.log(person.address.street);
-console.log(person.address);
-person.greet();
+// const{
+//     name,
+//     age,
+//     occupation,
+//     education,
+//     ismarried,
+//     address
+// }=person;
+// console.log(person.address.street);
+// console.log(person.address);
+// person.greet();
 // person.address().street();
+
+
+// calculation
+
+// function calcculatetotal(carttime,tax){
+
+//     let total = 0;
+//     for (let i = 0; i < carttime.length; i++) {
+// total += carttime[i].price*carttime[i].quantity;
+
+//     }
+// }
+// let cart =[
+//     {name: "dr marin",price:5000,quantity:1},
+//     {name: "dr marin",price:5000,quantity:2},
+// ];
+
+// const result = calcculatetotal(cart,0.02); 
+// console.log(`your full and final payment is:$(result`);
+
+
+// funtion
+
+// function myFunc(){
+
+//     let a = prompt("Enter first number ?");
+//     let b = prompt("Enter second number?");
+//     let result = Number(a) + Number(b);
+//     if(result){
+//         alert(`the sum of the two numbers is : ${result}`);
+//     }
+// }
+// myFunc();
+
+//  global scope
+// var x = 90;
+// let y = 70;
+// const z = 30;
+// function myfunc(){
+//     console.log(x, y, z);
+// }
+// myfunc();
+
+// // function scope
+
+// function myfunc(){
+    
+//     var x = 90;
+//     let y = 70;
+//     const z = 30;
+//     console.log(x, y, z);
+// }
+// myfunc();
+
+// //  Block scope
+
+// function myfunc(){
+//     if (true){
+
+        
+//         var x = 90;
+//         let y = 70;
+//         const z = 30;
+//     }
+//     console.log(y);
+//     console.log(z);
+// }
+// console.log(x);
+// myfunc();
+
+
+//  DOM
+// let result = document.getElementById("hello");
+// result.innerText = " I have gun";
+
+// result.style.color = "blue";
+// result.style.backgroundColor="red";
+// result.style.fontFamily=" monospace";
+// result.style.textAlign="center";
+
+// let result = document.getElementsByClassName("myclass");
+// result[1].innerText= "take out gun";
+// result[1].style.backgroundColor ="blue";
+// result[1].style.color = "White";
+// result[1].style.textAlign="center";
+
+
+// console.log(result);
+
+
+// let x = document.getElementtByTagName("span");
+
+// x[1].innerText= "nigga";
+
+
+// let n = document.getElementsByName("email");
+// n.style.backgroundColor="green";
+
+let z=document.querySelector(".delete");
+z.style.backgroundColor="red";
+
+let a = document.querySelector("#submit");
+a.onclick=addtask;
+
+let display = document.createElement("h1");
+display.innerHTML="this is a new element";
+document.body.prepend(display);
+
+function addtask(){
+    let display = document.createElement("div");
+    display.innerHTML="this is example";
+    document.body.append(display);
+}
+
+function deletetask(){
+    let h1 =   document.querySelector("div");
+    h1.remove();
+}
+// y.onclick = addtask;
+z.onclick = deletetask;
