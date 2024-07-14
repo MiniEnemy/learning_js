@@ -710,7 +710,7 @@
 // advance array method
 
 
-let arr = [4,5,6,7,,8,9,10,11,12,13,14,15,16,11,23,44,2,4,5,6];
+// let arr = [4,5,6,7,,8,9,10,11,12,13,14,15,16,11,23,44,2,4,5,6];
 
 
 
@@ -750,14 +750,52 @@ let arr = [4,5,6,7,,8,9,10,11,12,13,14,15,16,11,23,44,2,4,5,6];
 //         { id: 4, name: "orange", price: 7000, instock: false },
 //         { id: 5, name: "mango", price: 6000, instock: true }
 //       ];
-      
-//         let op = products.reduce((total, curvalue) => total + curvalue.price,0);
+            
+//         let op = products.reduce((tota l, curvalue) => total + curvalue.price,0);
 //         console.log(op);
        
-let a = document.getElementById("heading");
-let b = document.getElementById("box1");
-let c = document.getElementById("btn1");
+// let a = document.getElementById("heading");
+// let b = document.getElementById("box1");
+// let c = document.getElementById("btn1");
 
-btn1.addEventListener("click",() =>{
-  console.log("click");
-});
+// btn1.addEventListener("click",() =>{
+//   box1.classList.add("boxclass");   
+// console.log("Button was clicked");
+// });
+
+// btn1.addEventListener("mouseover",() =>{
+//   btn1.style.transform = "scale(1.1)";
+//   heading.innerText = "who let the dog out"; 
+// });
+// btn1.addEventListener("mouseout",() =>{
+//   btn1.style.transform = "scale(1)";
+//   heading.innerText = "This is my heading";
+// })
+
+// window.addEventListener("contextmenu",(e) =>{
+//   e.preventDefault();
+// });
+
+
+// btn1.addEventListener("dblclick",() =>{
+//   document.body.style.backgroundcolor = "red";
+//   });
+//   btn1.addEventListener("contextmenu",() =>{
+//   heading.style.backgroundcolor = "black";
+//   });
+
+// let input = document.querySelector("input");
+
+// input.addEventListener("change",(e) =>{
+// console.log(e.target.value);
+// console.log("changing");
+// });
+
+
+// math obj
+
+// let num = 4.7;
+// let ans = Math.round(num);
+// console.log(ans);
+let now = new Date().getFullYear();
+console.log(now);
