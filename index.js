@@ -821,5 +821,3 @@ rem.addEventListener("click",() => {
   // localStorage.Clear(); 
 });
 
-
-if (localStorage.getItem())
