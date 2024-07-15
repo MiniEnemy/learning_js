@@ -797,5 +797,29 @@
 // let num = 4.7;
 // let ans = Math.round(num);
 // console.log(ans);
-let now = new Date().getFullYear();
-console.log(now);
+// let now = new Date().getFullYear();
+// console.log(now);
+
+
+let ip  =  document.getElementById("myinput");
+let add = document.getElementById("btnadd");
+let rem = document.getElementById("btnremove");
+
+const myfunc = () => {
+  localStorage.setItem("varr",
+    JSON.stringify([...(localStorage.getItem("varr")? JSON.parse(localStorage.getItem("varr")) : []), ip.value])
+  );
+};
+add.addEventListener("click", myfunc);
+alert(localStorage.getItem("varr"));
+
+if(localStorage.getItem("varr")){
+  alert(localStorage.getItem("varr"));
+}
+rem.addEventListener("click",() => {
+  localStorage.removeItem("varr");
+  // localStorage.Clear(); 
+});
+
+
+if (localStorage.getItem())
