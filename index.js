@@ -663,6 +663,7 @@
 
 
 // let n = document.getElementsByName("email");
+<<<<<<< HEAD
 // n.style.backgroundColor="green";
 
 let z=document.querySelector(".delete");
@@ -687,3 +688,163 @@ function deletetask(){
 }
 // y.onclick = addtask;
 z.onclick = deletetask;
+=======
+// // n.style.backgroundColor="green";
+
+// let z=document.querySelector(".delete");
+// z.style.backgroundColor="red";
+
+// let a = document.querySelector("#submit");
+// a.onclick=addtask;
+
+// let display = document.createElement("h1");
+// display.innerHTML="this is a new element";
+// document.body.prepend(display);
+
+// function addtask(){
+//     let display = document.createElement("div");
+//     display.innerHTML="this is example";
+//     document.body.append(display);
+// }
+
+// function deletetask(){
+//     let h1 =   document.querySelector("div");
+//     h1.remove();
+// }
+// // y.onclick = addtask;
+// z.onclick = deletetask;
+
+
+// let btn = document.querySelectorAll("button");
+// btn[0].style.backgroundColor ="green";
+// btn[0].style.color ="red";
+// btn[0].innerText = "Click me";
+// console.log("btn");
+
+
+// function myfunction(name,age){
+//     console.log(`my name  is ${name}.And I am ${age} Years old.`);
+// }
+
+// myfunction("Jatin",20);
+
+// const merofunc =  (name , age)=>{
+//     console.log(`my name  is ${name}.And I am ${age} Years old.`);
+// }
+
+
+// advance array method
+
+
+// let arr = [4,5,6,7,,8,9,10,11,12,13,14,15,16,11,23,44,2,4,5,6];
+
+
+
+// let output = arr.find((value , index) =>{
+
+//     return value > 6;
+// });
+// let output = arr.find((value , index) => value > 6);
+// let output = arr.filter((value , index) => value > 6);
+// console.log(output);
+// const products = [
+//     { id: 1, name: "dew", price: 8000, instock: true },
+//     { id: 2, name: "apple", price: 5000, instock: false },
+//     { id: 3, name: "banana", price: 3000, instock: true },
+//     { id: 4, name: "orange", price: 7000, instock: false },
+//     { id: 5, name: "mango", price: 6000, instock: true }
+//   ];
+  
+  //   let op = products.map((value, index) => value.name);
+  //   console.log(op);
+  //   let output = document.createElement("h3");
+  //   output.innerText = op;
+  
+  //   document.body.prepend(output);
+//   let op = products.find((value, index) => !value.instock);
+//   let op = products.filter((value, index) => !value.instock);
+//   let op = products.some((value, index) => value.instock);
+//   let op = products.every((value, index) => value.instock);
+//   let op = products.forEach((value, index) => value.name);
+
+  
+
+// const products = [
+//         { id: 1, name: "dew", price: 8000, instock: true },
+//         { id: 2, name: "apple", price: 5000, instock: false },
+//         { id: 3, name: "banana", price: 3000, instock: true },
+//         { id: 4, name: "orange", price: 7000, instock: false },
+//         { id: 5, name: "mango", price: 6000, instock: true }
+//       ];
+            
+//         let op = products.reduce((tota l, curvalue) => total + curvalue.price,0);
+//         console.log(op);
+       
+// let a = document.getElementById("heading");
+// let b = document.getElementById("box1");
+// let c = document.getElementById("btn1");
+
+// btn1.addEventListener("click",() =>{
+//   box1.classList.add("boxclass");   
+// console.log("Button was clicked");
+// });
+
+// btn1.addEventListener("mouseover",() =>{
+//   btn1.style.transform = "scale(1.1)";
+//   heading.innerText = "who let the dog out"; 
+// });
+// btn1.addEventListener("mouseout",() =>{
+//   btn1.style.transform = "scale(1)";
+//   heading.innerText = "This is my heading";
+// })
+
+// window.addEventListener("contextmenu",(e) =>{
+//   e.preventDefault();
+// });
+
+
+// btn1.addEventListener("dblclick",() =>{
+//   document.body.style.backgroundcolor = "red";
+//   });
+//   btn1.addEventListener("contextmenu",() =>{
+//   heading.style.backgroundcolor = "black";
+//   });
+
+// let input = document.querySelector("input");
+
+// input.addEventListener("change",(e) =>{
+// console.log(e.target.value);
+// console.log("changing");
+// });
+
+
+// math obj
+
+// let num = 4.7;
+// let ans = Math.round(num);
+// console.log(ans);
+// let now = new Date().getFullYear();
+// console.log(now);
+
+
+let ip  =  document.getElementById("myinput");
+let add = document.getElementById("btnadd");
+let rem = document.getElementById("btnremove");
+
+const myfunc = () => {
+  localStorage.setItem("varr",
+    JSON.stringify([...(localStorage.getItem("varr")? JSON.parse(localStorage.getItem("varr")) : []), ip.value])
+  );
+};
+add.addEventListener("click", myfunc);
+alert(localStorage.getItem("varr"));
+
+if(localStorage.getItem("varr")){
+  alert(localStorage.getItem("varr"));
+}
+rem.addEventListener("click",() => {
+  localStorage.removeItem("varr");
+  // localStorage.Clear(); 
+});
+
+>>>>>>> todo
