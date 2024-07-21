@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Goals</title>
-    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="./todo.css">
+    <title>Todo</title>
 </head>
+
 <body>
-    <form action="">
-        <h1>My daily Goals</h1>
-        <input type="text" name="todo" id="tittle" placeholder="Add ur task">
-        <textarea name="" id="description" placeholder="description here"></textarea>
-        <button>Add</button>
-        <button>Delete</button>
-    </form>
-    
-    
-    <script src="todo.js"></script>
+
+    <div class="container">
+        <h1>My daily goals</h1>
+        <form action="">
+            <input type="text" name="todo" id="title" placeholder="Add todo">
+
+            <textarea name="" id="description" cols="30" rows="10" placeholder="Description here"></textarea>
+            <button id="addBtn" name="submit">Add</button>
+        </form>
+    </div>
+
+
+    <script src="./todo.js"></script>
 </body>
+
 </html>
