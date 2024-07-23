@@ -663,33 +663,7 @@
 
 
 // let n = document.getElementsByName("email");
-<<<<<<< HEAD
 // n.style.backgroundColor="green";
-
-let z=document.querySelector(".delete");
-z.style.backgroundColor="red";
-
-let a = document.querySelector("#submit");
-a.onclick=addtask;
-
-let display = document.createElement("h1");
-display.innerHTML="this is a new element";
-document.body.prepend(display);
-
-function addtask(){
-    let display = document.createElement("div");
-    display.innerHTML="this is example";
-    document.body.append(display);
-}
-
-function deletetask(){
-    let h1 =   document.querySelector("div");
-    h1.remove();
-}
-// y.onclick = addtask;
-z.onclick = deletetask;
-=======
-// // n.style.backgroundColor="green";
 
 // let z=document.querySelector(".delete");
 // z.style.backgroundColor="red";
@@ -827,24 +801,191 @@ z.onclick = deletetask;
 // console.log(now);
 
 
-let ip  =  document.getElementById("myinput");
-let add = document.getElementById("btnadd");
-let rem = document.getElementById("btnremove");
+// let ip  =  document.getElementById("myinput");
+// let add = document.getElementById("btnadd");
+// let rem = document.getElementById("btnremove");
 
-const myfunc = () => {
-  localStorage.setItem("varr",
-    JSON.stringify([...(localStorage.getItem("varr")? JSON.parse(localStorage.getItem("varr")) : []), ip.value])
-  );
-};
-add.addEventListener("click", myfunc);
-alert(localStorage.getItem("varr"));
+// const myfunc = () => {
+//   localStorage.setItem("varr",
+//     JSON.stringify([...(localStorage.getItem("varr")? JSON.parse(localStorage.getItem("varr")) : []), ip.value])
+//   );
+// };
+// add.addEventListener("click", myfunc);
+// alert(localStorage.getItem("varr"));
 
-if(localStorage.getItem("varr")){
-  alert(localStorage.getItem("varr"));
+// if(localStorage.getItem("varr")){
+//   alert(localStorage.getItem("varr"));
+// }
+// rem.addEventListener("click",() => {
+//   localStorage.removeItem("varr");
+//   // localStorage.Clear(); 
+// });
+
+  //set timeout
+
+  // setTimeout(() => {
+  //   console.log("after 2 seconds");
+  // }, 2000);
+
+
+  //set interval
+
+  // const intervalID = setInterval(() => {
+  //   console.log("I love js"); 
+  // }, 1000);
+
+  // setTimeout(() =>{
+  //   clearInterval(intervalID);
+  // },5000)
+  // function updateClock(){
+  //   const clock = document.querySelector("#clock");
+  //   const now = new Date();
+  //   const hours= now.getHours().toString().padStart(2,"0");
+  //   const minute= now.getMinutes().toString().padStart(2,"0");
+  //   const second= now.getSeconds().toString().padStart(2,"0");
+  //   clock.innerHTML = `${hours} :${minute}: ${second}`;
+  // }
+  // setInterval(updateClock,10);
+// function person(name,age,adress){
+//   this.name = name;
+//   this.age = age;
+//   this.adress = adress;
+//   this.greeting = function(){
+//     let greet = ` Hello my name is ${name} am at the age of ${age} and I reside in ${this.adress}`;
+// }
+// const p1 = new person("sauvagya",25,"kalimati");
+// const p2 = new person("aryan",20,"chandragiri");
+// console.log(p1);
+// }
+
+
+function Bankacc(customername,balance = 0 ,acno){
+  this.customername = customername;
+  this.balance = balance;
+  this.acno = Date.now();
+  
+  this.deposit = function(amount){
+    this.balance += amount;
 }
-rem.addEventListener("click",() => {
-  localStorage.removeItem("varr");
-  // localStorage.Clear(); 
-});
 
->>>>>>> todo
+this.withdraw = function(amount){
+  this.balance -= amount};
+}
+// const ramacc = new Bankacc("ram thapa",1000,15345)
+// ramacc.deposit(5000);
+// console.log(ramacc);
+
+// let accounts = [];
+// const addform = document.querySelector("#addform");
+// const cname = document.querySelector("#Cname");
+// const initialBalance = document.querySelector("#initialBalance");
+
+// addform.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let account = new Bankacc(cname.value, +initialBalance.value);
+//   accounts.push(account);
+//   console.log(accounts);
+// });
+
+// const df = document.querySelector("#depositform");
+// const acn = document.querySelector("#acn");
+// const depositAmount = document.querySelector("#depositAmount");
+
+// df.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let ac = accounts.find(
+//     (account) => account.acn === +acn.value);
+// });
+// Define the Bankacc class
+// class Bankacc {
+//   constructor(name, balance) {
+//     this.name = name;
+//     this.balance = balance;
+//     this.acn = Bankacc.generateAccountNumber();
+//   }
+
+//   static generateAccountNumber() {
+//     return Math.floor(Math.random() * 1000000);
+//   }
+
+//   deposit(amount) {
+//     this.balance += amount;
+//   }
+// }
+
+// let accounts = [];
+// const addform = document.querySelector("#addform");
+// const cname = document.querySelector("#Cname");
+// const initialBalance = document.querySelector("#initialBalance");
+
+// addform.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let account = new Bankacc(cname.value, +initialBalance.value);
+//   accounts.push(account);
+//   console.log(accounts);
+// });
+
+// const df = document.querySelector("#depositform");
+// const acn = document.querySelector("#acn");
+// const depositAmount = document.querySelector("#depositAmount");
+
+// df.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let ac = accounts.find(
+//     (account) => account.acn === +acn.value
+//   );
+
+//   if (ac) {
+//     ac.deposit(+depositAmount.value);
+//     console.log(ac);
+//   } else {
+//     console.log("Account not found");
+//   }
+// });
+
+// withdrawform.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let account = accounts.find(account => account.accountno === Number(withdrawno.value));
+//   if (account) {
+//       account.withdraw(+wamount.value);
+//       console.log(accounts);
+//   } else {
+//       console.log("Account not found");
+//   }
+// });
+
+class BankAccount{
+  constructor(name,balance){
+     this.name = name;
+     this.balance = balance;
+     this.accountno = Math.floor(Math.random()1000000);
+  }
+  deposit(amount){
+     this.balance+=amount;
+  }
+  withdraw(amount){
+     this.balance-=amount
+  }
+}
+class currentaccount extends BankAccount {
+constructor(name,balance){
+   super(name,balance);
+}
+takebusinessloan(amount,tax){
+   let ans=amount+(amounttax)/100;
+   console.log("this is a :${ans}");
+}
+}
+class SavingAccount extends BankAccount {
+constructor(name,balance){
+   super(name,balance);
+}
+takepersonalloan(amount,tax){
+   let ans=amount+(amount*tax)/100;
+   console.log("this is a :${ans}");
+}
+}
+const now=new SavingAccount("ram",1000);
+now.deposit(500);
+const bow=new SavingAccount("sam",1000);
+console.log(now,bow);
