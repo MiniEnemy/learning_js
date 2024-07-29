@@ -1,991 +1,1095 @@
-// //variables
-// // var
+// variables
 
-// // var x =90;
-// // console.log(x);
+//var
+// var x = 90;
+// console.log(x);
 
-// // var x=100;
-// // console.log(x);
+// var x = 180;
+// console.log(x);
 
-// // //LET
-// // let y=600;
-// // console.log(y);
+//let
+// let y = 90;
+// console.log(y);
 
-// //  y=1000;
-// // console.log(y);
+// cannot be redeclared
+// let y = 10;
 
-// // // const
+//can be updated
+// y = 20;
+// console.log(y);
 
-// // const  result =90;
-// // console.log(result);
-// // const result = 900;
-// // console.log(result);
+//const
+// const z = 10;
+// console.log(z);
 
-// // string
+//cannot be redeclared
+//cannot be updated
+// z = 9;        // --- error occurs
+// console.log(z);
 
-// // const output ="aryan noob" ;
-// // console.log(output);
-// // console.log(typeof output);
+//Date types in JavaScript
+//string
+// const output = "Hello World!";
+// console.log(typeof output);
 
-// // number
-// // const result =90;
-// // console.log(result);
-// // console.log(typeof result);
-
-// //float
-
-// // const no=9.99;
-// // console.log(no);
-// // console.log(typeof no);
-
-
-// // //undefined
-// // let x;
-// // console.log(x);
-
-// // // nulll
-
-// // let y=null;
-// // console.log(y);
-// // console.log(typeof y);
-
-// // //boolean
-
-// // const istrue=true;
-// // console.log(istrue);
-// // console.log(typeof istrue);
-
-// // // big int
-
-// // const result =58565656n;
-// // console.log(result);
-// // console.log(typeof result);
-
-// // //symbol
-
-// // const sym=Symbol("hello/7");
-// // console.log(sym);
-// // console.log(typeof sym);
-
-// //Type conversions
-// // x=50.5;
-// // console.log(x);
-// // console.log(typeof x);
-// // const r="123";
-// // const op = Number(r);
-// // const ops = parseFloat(r); 
-// // console.log(r);
-// // console.log(op);
-// // console.log(ops);
-// // console.log(typeof op);
-// // console.log(typeof ops);
-// // console.log(typeof r);
-// // const res =678;
-// // const output =String(res);
-// // const outp =res.toString(); //converting number to string
-// // console.log(output);
-// // console.log(typeof output);
-// // console.log(outp);
-// // console.log(typeof outp);
-
-
-// // const car=false;
-// // const bike=String(car); // converting boolean to string
-// // console.log(bike);
-// // console.log(typeof bike); 
-
-// //  object Types
-
-// // const obj={
-// //     name:"aryan",
-// //     age:25,
-// //     ismarried:false,
-// //     occupation: "webdev",
-// // };
-
-// // console.log(obj);
-// // console.log(typeof obj);
-
-// // array
-
-// // const arr=[3,1,45,5,64,1,1,1,1,];
-// // console.log(arr);
-// // console.log(typeof arr);
-
-// // date
-
-// // const date = new Date();
-// // console.log(date);
-// // console.log(typeof date);
-
-// // concatinate
-// // const concatinate =1+"22";
-// // console.log(concatinate);
-// // console.log(typeof concatinate);
-
-// // const minus = 55-"21";
-// // console.log(minus);
-// // console.log(typeof minus);
-
-// //  String Methods
-
-// // length
-
-// const result="Hello World";
+//number
+// const result = 90;
 // console.log(result);
+// console.log(typeof result);
+
+//float
+// const result =3.67;
+// console.log(result);
+// console.log(typeof result);
+
+// undefined
+// let y;
+// console.log(y);
+// console.log(typeof y);
+
+// null
+// let y = null;
+// console.log(y);
+// console.log(typeof y);
+
+// boolean
+// let y = true;
+// console.log(y);
+// console.log(typeof y);
+
+//BigInt
+// let y = 345346456445n;
+// console.log(y);
+// console.log(typeof y);
+
+// Symbol
+// const y = Symbol("Hi!");
+// console.log(y);
+// console.log(typeof y);
+
+// let x = 8.68;
+// console.log(x);
+// console.log(typeof x);
+
+// Manual Type Consversion
+// const result = "1233";
+// const output = Number(result);
+
+// console.log(result);
+// console.log(typeof result);
+// console.log(output);
+// console.log(typeof output);
+
+///////
+
+// const result = "1233";
+// const output = parseInt(result);
+
+// console.log(result);
+// console.log(typeof result);
+// console.log(output);
+// console.log(typeof output);
+
+////////
+
+// const result = "6.78";
+// const output = parseFloat(result);
+
+// console.log(result);
+// console.log(typeof result);
+// console.log(output);
+// console.log(typeof output);
+
+////////////
+// const result = 678;
+// const output = String(result);
+
+// console.log(output);
+// console.log(typeof output);
+
+// const result = 678;
+// const output = result.toString();
+
+// console.log(output);
+// console.log(typeof output);
+
+//////
+// const isMarried = false;
+// const ans = String(isMarried);
+
+// console.log(ans);
+// console.log(typeof ans);
+
+//Variables
+//Objects
+
+// const obj={
+//     name: "jatin ",
+//     age: 21,
+// }
+// console.log(typeof obj);
+
+// const arr = [3, 4, 5, 6, 7];
+// console.log(typeof arr);
+
+// const date = new Date();
+// console.log(date);
+// console.log(typeof date);
+
+//String Method
+
+// const result = "Hello World";
+// //length
 // console.log(result.length);
 
-// // charAT
+// //chatAt
+// console.log(result.charAt(4));
 
-// console.log(result.charAt(2));
+// //indexOf
+// console.log(result.indexOf("o"));
 
-// // indexOf 
-// console.log(result.indexOf('o'));
+// //lastIndexOf
+// console.log(result.lastIndexOf("o"));
 
-// // lastIndexOf
-
-// console.log(result.lastIndexOf('o')); // it should be the last index of the string 
-
-// // lowercase
+// //toLowerCase
 // console.log(result.toLowerCase());
 
-// // uppercase
-
+// //toUpperCase
 // console.log(result.toUpperCase());
 
-// // replace
+// //replace
+// console.log(result.replace("World", "everyone"));
 
-// console.log(result.replace('World','Universe')); // it replaces world with universe
-
-// // includes
-
-// console.log(result.includes('World')); // it returns true if the string includes the word or not
+// //includes
+// console.log(result.includes("World"));
 
 // //slice
+// console.log(result.slice(1, 6));
 
-// console.log(result.slice(2,5)); // it returns the string from the start index to the end index
+//concat
+// console.log(result.concat(" " + "I love JS"));
 
-// // concat
+// //let output = "         B  C  A"
+// let output = "    BCA";
+// console.log(output.trim())
 
-// console.log(result.concat(' Goodbye')); // it concatenates the string
+// //split
+// console.log(result.split(" "))
 
+// //concatination
+// let x = "Hello World";
+// let y = "I love JS!";
+// let z = "Because it's fun";
+// console.log(x + " " + y + " " + z);
 
-// let tr = "                     broke people";
-// console.log(tr.trim()); // it trims the  empty string and returns the   string conc separated   by  commas  between   
+// const a = 80,
+//   b = 60;
 
-// // split
+// const result = a + b;
+// // console.log("The sum of two number is:" + result);
+// console.log(`The sum of two number is: ${result}`);
 
-// console.log(tr.split(' ')); // it splits the string by space and returns an array
+// Assignment Operator
+// let y = 80;
+// y += 10;
+// console.log(y);
 
-
-// concatination 
-
-
-// let x ="hello world";
-// let y = "i love someone";
-// console.log(x+y); // concatination
-// //  for space 
-// console.log( x + " " + y ); // concatination
-
-// template literals
-// const a = 50 ;
-// const b = 70 ;
-// const result = a + b ;
-// console.log("The sum of two numbers is :"+result)
-// console.log(`The sum of two numbers is :${result}`); 
-
-
-// Assignment Operators
-
-// let x= 55;
-// x = x + 55;
-
-// console.log(x); // 60
-
-// let y= 55
-// y += "making things" ;
-// y += 55 ;
-
-// console.log(y); // 60
-
-1=="1"; // here it compares the number and dosn't compare the data types so it comes true 
-
-1==="1"; // here it compares the data types and number so data types comes  false
-
+//
 // let a = 10;
-// let b = 15;
+// let b = 5;
 // let c = "10";
-// console.log( a==c);
-// console.log( a === c);
-// console.log( a !=b);
-// console.log( a !=c);
-// console.log(a>b);
-// console.log(a<b);
+// console.log(a == c);
+// console.log(a === c);
+// console.log(a != b);
+// console.log(a !== c);
 
-// ternary operator
+// let ageGroup = 18;
+// console.log(ageGroup >= 18 ? "You can vote" : "You can't");
 
-// let agegrp=10;
-// console.log( agegrp>=18?"you can vote": "you can't vote");
-//                             // if yes       if false
+//Unary Operators
+// let x = "123";
+// let y = +x; //positive
+// console.log(y);
+// console.log(typeof y);
 
 // const obj = {
-//     name:"aryan",
-//     age:25,
-//     isMarried:false,
-//     occupation: "webdev",
+//   name: "Sita Devi",
+//   age: 56,
 // };
+
 // delete obj.age;
 // console.log(obj);
 
-// let email = "ram@gmail.com";
-// let password = "joking";
+// ////
+// const myOBJ = {
+//     name: "Sita Devi",
+//     age: 56,
+//   };
 
-// if (email === "ram@gmail.com" && password === "joking"){
-//     console.log("Login Successful");
-// }else {
-//     console.log("Login Failed");
+//   delete myOBJ.age;
+//   console.log(obj);
+
+// let email = "jatin@gmail.com";
+// let password = "password";
+
+// if (email === "jatin@gmail.com" && password === "password") {
+//   console.log("Login Successfull!");
+// } else {
+//   console.log("Invalid Credentials");
 // }
 
-//  see grade check
+// SEE grade check
 
-// let grade = 85;
+// let grade = 98;
 
-// if(grade >=90 ){
-//     console.log("Grade: A+");
-// }else if(grade >=80){
-//     console.log("grade A");
-// }else if(grade >=70){
-//     console.log("Grade B+");
-// }else if(grade >=60){
-//     console.log("Grade B");
-// }else if(grade >=50){
-//     console.log("Grade C");
-// }else if(grade >=40){
-//     console.log("Grade D");
-// }else{
-//     console.log("Failed");
+// if (grade > 90) {
+//   console.log("A+");
+// } else if (grade >= 80 && grade <= 90) {
+//   console.log("A");
+// } else if (grade >= 70 && grade <= 80) {
+//   console.log("B+");
+// } else if (grade >= 60 && grade <= 70) {
+//   console.log("B");
+// } else if (grade >= 50 && grade <= 60) {
+//   console.log("C+");
+// } else if (grade >= 40 && grade <= 50) {
+//   console.log("C+");
+// } else {
+//   console.log("Non Graded");
 // }
 
+// let weather = "rainy";
 
-// let weather="Cloudy";
-
-// if(weather=="Cloudy"){
-//     console.log("weather is cloudy");
-// }else if(weather == "rainy"){
-//     console.log("weather is rainy");
-// }else if (weather == "summer"){
-//     console.log("weather is summer");
-// }else if (weather == "winter"){
-//     console.log("weather is winter");
-// }else {
-//     console.log("weather is not defined ");
+// if (weather === "sunny") {
+//   console.log("Today is a sunny day");
+// } else if (weather === "winter") {
+//   console.log("Today is a cold day");
+// } else if (weather === "rainy") {
+//   console.log("Today is a rainy day!");
+// } else {
+//   console.log("Invalid Weather!");
 // }
 
-// Switch
+// const d = new Date().getDay();
 
-// let role = "Super admin";
+// switch (d) {
+//   case 0:
+//     console.log("Today is sunday!");
+//     break;
 
-// switch (role) {
-//     case "buyer":
-//         console.log("you can only buy products");
-        
-//         break;
-//     case "seller":
-//         console.log("You cans sell produvts");
+//   case 1:
+//     console.log("Today is monday!");
+//     break;
 
-//     case "admin":
-//         console.log("You can add products");
-//         break;
-//     case "Super admin":
-//         console.log("You can do everything");
-//         break;
+//   case 2:
+//     console.log("Today is tuesday!");
+//     break;
 
-//     default:
-//         console.log("Invalid role")
-//         break;
+//   case 3:
+//     console.log("Today is wednesday!");
+//     break;
+
+//   case 4:
+//     console.log("Today is thrusday!");
+//     break;
+
+//   case 5:
+//     console.log("Today is friday!");
+//     break;
+
+//   case 6:
+//     console.log("Today is saturday!");
+//     break;
+
+//   default:
+//     console.log("Invalid weather");
 // }
 
-// let day = 1;
+// let status = 200;
 
-// switch(day){
-//     case 1 :
-//         console.log("Sunday");
-//         break;
-//     case 2 :
-//         console.log("Monday");
-//         break;
-//     case 3:
-//         console.log("Tuesday");
-//         break;
-//     case 4 :
-//         console.log("wednesday");
-//         break;
-//     case 5:
-//         console.log("Thursday");
-//         break;
-//     case 6 :
-//         console.log("Friday");
-//         break;
-//     case 7:
-//         console.log("Saturday");
-//         break;
-//     default :
-//     console.log("Invalid day");
+// switch (status) {
+//   case 201:
+//     console.log("Created");
+//     break;
+
+//   case 400:
+//     console.log("Bad Request");
+//     break;
+
+//   case 401:
+//     console.log("Unauthorized");
+//     break;
+
+//   case 403:
+//     console.log("Forbidden");
+//     break;
+
+//   case 200:
+//     console.log("Ok");
+//     break;
+
+//   case 500:
+//     console.log("Internal server error");
+//     break;
+
+//   default:
+//     console.log("Error");
 // }
 
-
-// let date = new Date().getDay();
-// console.log(date);
-
-// switch(date){
-//     case 0 :
-//         console.log("today is Sunday");
-//         break;
-//     case 1 :
-//         console.log("today is Monday");
-//         break;
-//     case 2:
-//         console.log("today is Tuesday");
-//         break;
-//     case 3 :
-//         console.log("today is wednesday");
-//         break;
-//     case 4 :
-//         console.log("today is Thursday");
-//         break;
-//     case 5 :
-//         console.log("today is Friday");
-//         break;
-//     case 6 :
-//         console.log("today is Saturday");
-//         break;
-//     default :
-//     console.log("Invalid day");
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`2 * ${i} = ${2 * i}`);
+// }
+// for (let i = 0 ; i <20; i ++) {
+//   console.log('the even number are:${i}');
 
 // }
 
-// Status
+/*
+====
+ARRAY
+====
+*/
 
-// let Status = 200;
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr);
+// console.log(arr[2]);
+// console.log(typeof arr)
 
-// switch (Status) {
-//     case 200:
-//         console.log("Status OK");
-//         break;  
-//     case 201:
-//         console.log("Created");
-//         break;
-//     case 301:
-//         console.log("Moved Permanently");
-//         break;
-//     case 400:
-//         console.log("bad request");
-//     case 401:
-//         console.log("Unauthorized");
-//         break;
-//     case 403:
-//         console.log("Forbidden");
-//         break;
-//     case 404:
-//         console.log("Not Found");
-//         break;
-//     case 500:
-//         console.log("Internal Server Error");
-//         break;
-//     default:
-//         console.log("Unknow Status Code");
-// }
+// let arr = [1, 2, 3, 4, 5, 3]; //data structure
 
+//Splice //removes the data from array
+// arr.splice(1,3);
+// console.log(arr);
 
-//  loop
+//slice //prints the defined set
+// let sliced = arr.slice(1,3); //prints index 1 and 2
+// console.log(sliced);
 
-// for(let i = 0; i <=10;i++){
-//     console.log("Hello World"+i);
-// }
-// for(let i=1;i<=10;i++){
-//     console.log(`2*${i}=${2*i}`);
-// }
-// for(let i=1;i<=25;i++){
-//     if (i%2 ===0){
-//         console.log(`the even no is ${i}`);
-//     }else{
-
-//         console.log(`the odd no is ${i}`);
-//     }
-// }
-
-
-// array
-
-// const arr = [3, 4, 5, 6, 7];
-
-// let sum = 0;
+// check index
+// console.log(arr.indexOf(3))
+// console.log(arr.lastIndexOf(3))
 
 // for (let i = 0; i < arr.length; i++) {
-//     sum += arr[i];
+//   console.log(arr[i]);
 // }
 
-// console.log(`sum: ${sum}`);
-
-// while loop
-
-// let i = 0;
-// while (i <=10) {
-//     console.log(`Hello World ${i}`);
-//     i++;
-// }
-
-
-
-// do while
-// i=0;
-// do{
-//     console.log(`Hello World$
-//         {i}`);
-//     i++
-// }while(i<10);   
-
-
-// const arr =[4,5,6,7,8,9,10,11,12,4];
+// //push
+// let newArr = arr.push(12);
 // console.log(arr);
-// console.log(arr[4]);
-// console.log(typeof arr);
-
-
-// Array
-
-// let ans=[3,45,4,5,"apple khalo friends"]; // data structure
-
-// console.log(ans[4]); 
-// console.log(ans.length); // length of array
-
-// const arr = [3,6,5,89,5,5,];
-// console.log(arr.length); // length of array
-
-//push
-
-// const arr = [5,6,7,8,9];
-// console.log(arr.push(99));
-// // console.log(arr);
 
 // //pop
+// arr.pop(12);
+// console.log(arr);
 
-// console.log(arr.pop());
-// // console.log(arr);
+// //push
+// arr.shift(12);
+// console.log(arr);
 
-// //shift
+// //pop
+// arr.unshift(12);
+// console.log(arr);
 
-// console.log(arr.shift(5));
-// // console.log(arr);
+//includes
+// if (arr.includes(4)){
+//     console.log("4 is present in array")
+// }
 
-// //unshift
-
-// console.log(arr.unshift(1));
-// // console.log(arr);
-
-
-// splice
-// const arr =[4,5,6,7,8,9,10,11,12];
-// console.log(arr.splice(1, 3));
-
-// includes
-// console.log(arr.includes(109));
-
-// const output = ["Hello","Javascript","is","Fun"];
-// console.log(output);
-// console.log(output.join(" "));
-
-
-// splice
-
-// let result = arr.splice(1,4);
+// let result = arr.includes(4);
 // console.log(result);
 
-// // index of
-// let output = arr.indexOf(4);
-// console.log(output);
+//Join
+// const output = ["JS", "is", "Fun"];
+// console.log(output.join(" "));
 
-// // last index of
-
-// let output1 = arr.lastIndexOf(4);
-// console.log(output1);
-
-
+//////
 
 // let arr = [];
 // let sum = 0;
 
-// for(let i=1;i<10;i++)
-// {
-// arr.push(i);
-
+// for (let i = 1; i <= 10; i++) {
+//   arr.push(i);
 // }
-// for (let i=1; i<arr.length;i++){
-//     sum += arr[i];
-    
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i];
 // }
-// let result = sum*2;
-// console.log(sum);
+// console.log(`The sum of the given numbers is ${sum}`);
 
-
-// object
+/////OBJECTS IN JS
 
 // const person = {
-//     name: "Jatin",
-//     age:20,
-//     occupation:"college",
-//     education:"Bca",
-//     ismarried: "forever single",
-    
-//     address: {
-//         street: "tahachal",
-//         city: "Kathamndu",
-//         state: "Kathmandu",
-
-//         province:{
-//             name: "Bagmati",
-//             population: 19000000,
-//             country: "Nepal"
-//         }
-//     },
-    
-//     greet:function(){
-//         console.log(`Hello my name is ${this.name}`);
-//     }
-
+//   name: "jatin",
+//   age: 21,
+//   address: {
+//     street: "Satungal",
+//     city: "Kathamandu",
+//     country: "Nepal",
+//   },
+//   occupation: "Student",
+//   education: "BCA",
+//   isMarried: false,
+//   greet: function () {
+//     console.log(`Hello, I am ${this.name} and i am ${this.age} years old!`);
+//   },
 // };
-
-// const{
-//     name,
-//     age,
-//     occupation,
-//     education,
-//     ismarried,
-//     address
-// }=person;
-// console.log(person.address.street);
-// console.log(person.address);
 // person.greet();
-// person.address().street();
 
+// //Destructuring
+// const {
+//   name,
+//   age,
+//   isMarried,
+//   address: { street, city, country },
+// } = person;
 
-// calculation
+// console.log(name, age, isMarried, street, city, country);
 
-// function calcculatetotal(carttime,tax){
-
-//     let total = 0;
-//     for (let i = 0; i < carttime.length; i++) {
-// total += carttime[i].price*carttime[i].quantity;
-
-//     }
+////Function in JavaScript
+// function myFunction(){
+//     console.log("Hey Function");
 // }
-// let cart =[
-//     {name: "dr marin",price:5000,quantity:1},
-//     {name: "dr marin",price:5000,quantity:2},
+
+// myFunction();
+
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// console.log(`The sum is ${sum(2, 4)}`);
+
+// function Radius(radius) {
+//   return Math.PI * radius * radius;
+// }
+
+// console.log(`The area of circle is ${Math.round(Radius(6), 4)}`);
+
+// Function to calculate the sum of provided numbers
+// function calculateTotal(...numbers) {
+//     return numbers.reduce((sum, number) => sum + number, 0);
+// }
+
+// // Example usage
+// const sum = calculateTotal(1, 2, 3, 4, 5);
+// console.log(`The sum is: ${sum}`);
+
+// function calculateTotal(cartItems, taxRate) {
+//   let total = 0;
+//   for (i = 0; i < cartItems.length; i++) {
+//     total += cartItems[i].price * cartItems[i].quantity;
+//   }
+//   total += total * taxRate;
+//   return total;
+// }
+
+// let cart = [
+//   { name: "Dr Martin", price: 8000, quantity: 2 },
+//   { name: "SB Dunk", price: 4000, quantity: 3 },
 // ];
 
-// const result = calcculatetotal(cart,0.02); 
-// console.log(`your full and final payment is:$(result`);
+// const result = calculateTotal(cart, 0.02);
 
+// console.log(`your full and final payment is:${result}`);
 
-// funtion
-
-// function myFunc(){
-
-//     let a = prompt("Enter first number ?");
-//     let b = prompt("Enter second number?");
-//     let result = Number(a) + Number(b);
-//     if(result){
-//         alert(`the sum of the two numbers is : ${result}`);
-//     }
+// function convert() {
+//   const meterInput = document.getElementById("meterInput").value;
+//   const result = meterInput * 3.28084;
+//   document.getElementById(
+//     "result"
+//   ).textContent = `${meterInput} meters is equal to ${result.toFixed(2)} feet`;
 // }
-// myFunc();
 
-//  global scope
+// function myFunction(){
+//   let a = prompt("Enter first number?");
+//   let b = prompt("Enter second number?");
+
+//   let result = Number(a) + Number(b);
+//   if(result){
+//     alert(`The sum of two numbers is: ${result}`);
+//   }
+
+// }
+
+// myFunction();
+
+//Global Scoping
 // var x = 90;
 // let y = 70;
 // const z = 30;
-// function myfunc(){
-//     console.log(x, y, z);
+
+// function myPrint() {
+//   console.log(x, y, z);
 // }
-// myfunc();
 
-// // function scope
+// myPrint();
 
-// function myfunc(){
-    
+//Function Scope
+// function myPrint() {
+//   var x = 90;
+//   let y = 70;
+//   const z = 30;
+//   console.log(x, y, z);
+// }
+
+// myPrint();
+
+//Scope defined inside a block of conditional statement
+//Block Scope
+// function myPrint() {
+//   if (true) {
 //     var x = 90;
 //     let y = 70;
 //     const z = 30;
-//     console.log(x, y, z);
-// }
-// myfunc();
-
-// //  Block scope
-
-// function myfunc(){
-//     if (true){
-
-        
-//         var x = 90;
-//         let y = 70;
-//         const z = 30;
-//     }
 //     console.log(y);
 //     console.log(z);
+//   }
+//   console.log(x);
 // }
-// console.log(x);
-// myfunc();
 
+// myPrint();
 
-//  DOM
+//var can be used as a function scope
+//let and const cannot be used as function scope, it can only be ued inside the defined block
+
+//////DOM
+// console.log(document.body);
+
+//Id Selector
 // let result = document.getElementById("hello");
-// result.innerText = " I have gun";
 
-// result.style.color = "blue";
-// result.style.backgroundColor="red";
-// result.style.fontFamily=" monospace";
-// result.style.textAlign="center";
-
-// let result = document.getElementsByClassName("myclass");
-// result[1].innerText= "take out gun";
-// result[1].style.backgroundColor ="blue";
-// result[1].style.color = "White";
-// result[1].style.textAlign="center";
-
-
+// result.innerText = "I Love JS!";
+// result.style.backgroundColor = "red";
+// result.style.color = "white";
+// result.style.textAlign = "center";
 // console.log(result);
 
+// //Class Selector
+// let output = document.getElementsByClassName("myClass")[0];
+// output.innerText = "How are you?";
+// output.style.backgroundColor = "aqua";
+// output.style.color = "green";
+// output.style.textAlign = "center";
+// console.log(output);
 
-// let x = document.getElementtByTagName("span");
+// //Class Selector
+// let ans = document.getElementsByClassName("myClass");
+// ans[1].innerText = "Who are you?";
+// ans[1].style.backgroundColor = "blue";
+// ans[1].style.color = "white";
+// ans[1].style.textAlign = "center";
+// console.log(ans);
 
-// x[1].innerText= "nigga";
+// //Tag Selector
+// let res = document.getElementsByTagName("span");
 
+// res[0].style.backgroundColor = "brown";
+// res[0].style.color = "white";
+// res[0].style.textAlign = "center";
 
-// let n = document.getElementsByName("email");
-// n.style.backgroundColor="green";
+// console.log(res);
 
-// let z=document.querySelector(".delete");
-// z.style.backgroundColor="red";
+// let newRes = document.getElementsByTagName("span");
 
-// let a = document.querySelector("#submit");
-// a.onclick=addtask;
+// newRes[1].style.backgroundColor = "aquamarine";
+// newRes[1].style.color = "red";
+// newRes[1].style.textAlign = "center";
 
-// let display = document.createElement("h1");
-// display.innerHTML="this is a new element";
+// console.log(newRes);
+
+// //////
+
+// let x = document.getElementsByName("email");
+// // let y = document.getElementsByName("password");
+// console.log(x);
+
+// let y = document.querySelector("#add");
+// y.style.backgroundColor = "blue";
+// y.style.color = "white";
+// y.style.padding = "2vmax 4vmax";
+// y.style.cursor = "pointer";
+// y.style.border = "none";
+
+// y.setAttribute("class", "meroClass");
+
+// let z = document.querySelector(".delete");
+// z.style.backgroundColor = "red";
+// z.style.color = "white";
+// z.style.padding = "2vmax 4vmax";
+// z.style.cursor = "pointer";
+// z.style.border = "none";
+
+// y.addEventListener("click", () => {
+//   let display = document.createElement("h1");
+//   display.innerText = "This is a new H1";
+//   document.body.append(display);
+// });
+
+// function addTask() {
+//   let display = document.createElement("h1");
+//   display.innerText = "This is a new H1";
+//   document.body.append(display);
+// }
+// y.onclick = addTask;
+
+// function deleteTask(){
+//   let h1 = document.querySelector("h1");
+//   h1.remove();
+// }
+
+// z.onclick = deleteTask;
+
+// let display  = document.createElement("h1");
+// display.innerText = "This is a new H1";
+// document.body.append(display);
 // document.body.prepend(display);
 
-// function addtask(){
-//     let display = document.createElement("div");
-//     display.innerHTML="this is example";
-//     document.body.append(display);
+// let btn  = document.querySelectorAll("button");
+// // console.log(btn);
+// btn[0].style.backgroundColor = "blue";
+// btn[0].style.border = "none";
+// btn[0].style.borderRadius = "6px";
+// btn[0].style.color = "white";
+// btn[0].style.padding = "12px 16px";
+
+// btn[1].style.backgroundColor = "red";
+// btn[1].style.border = "none";
+// btn[1].style.borderRadius = "6px";
+// btn[1].style.color = "white";
+// btn[1].style.padding = "12px 16px";
+
+// function myFunction(name, age) {
+//   console.log(`My name is ${name}, and I am ${age} years old.`);
 // }
+// myFunction("jatin ", 21);
 
-// function deletetask(){
-//     let h1 =   document.querySelector("div");
-//     h1.remove();
-// }
-// // y.onclick = addtask;
-// z.onclick = deletetask;
+//Fat Arrow Function
+// const meroFunction = (name, age) => {
+//   console.log(`My name is ${name}, and I am ${age} years old.`);
+// };
+// meroFunction("jatin ", 21);
 
+//Advance Array Method
+// let arr = [1, 4, 5, 6, 7, 8, 9, 5, 4];
 
-// let btn = document.querySelectorAll("button");
-// btn[0].style.backgroundColor ="green";
-// btn[0].style.color ="red";
-// btn[0].innerText = "Click me";
-// console.log("btn");
+//find
+// const myFunction = (value, index) => {
+//   return value > 6;
+// };
 
-
-// function myfunction(name,age){
-//     console.log(`my name  is ${name}.And I am ${age} Years old.`);
-// }
-
-// myfunction("Jatin",20);
-
-// const merofunc =  (name , age)=>{
-//     console.log(`my name  is ${name}.And I am ${age} Years old.`);
-// }
-
-
-// advance array method
-
-
-// let arr = [4,5,6,7,,8,9,10,11,12,13,14,15,16,11,23,44,2,4,5,6];
-
-
-
-// let output = arr.find((value , index) =>{
-
-//     return value > 6;
+// let output = arr.find((value, index) => {
+//   return value > 6;
 // });
-// let output = arr.find((value , index) => value > 6);
-// let output = arr.filter((value , index) => value > 6);
+
+// let output = arr.find((value, index) => value > 6);
+
+// //filter
+// let output = arr.filter((value, index) => value > 6);
 // console.log(output);
+
+//
 // const products = [
-//     { id: 1, name: "dew", price: 8000, instock: true },
-//     { id: 2, name: "apple", price: 5000, instock: false },
-//     { id: 3, name: "banana", price: 3000, instock: true },
-//     { id: 4, name: "orange", price: 7000, instock: false },
-//     { id: 5, name: "mango", price: 6000, instock: true }
-//   ];
-  
-  //   let op = products.map((value, index) => value.name);
-  //   console.log(op);
-  //   let output = document.createElement("h3");
-  //   output.innerText = op;
-  
-  //   document.body.prepend(output);
-//   let op = products.find((value, index) => !value.instock);
-//   let op = products.filter((value, index) => !value.instock);
-//   let op = products.some((value, index) => value.instock);
-//   let op = products.every((value, index) => value.instock);
-//   let op = products.forEach((value, index) => value.name);
+//   { id: 1, name: "Dr Martin", price: 5000, inStock: true },
+//   { id: 2, name: "SB Dunk", price: 7000, inStock: false },
+//   { id: 3, name: "Air Force 1", price: 10000, inStock: true },
+//   { id: 4, name: "Travis Scott", price: 9000, inStock: true },
+// ];
 
-  
+//find
+// let answer = products.find((value, index) => value.inStock);
+// console.log(answer);
 
-// const products = [
-//         { id: 1, name: "dew", price: 8000, instock: true },
-//         { id: 2, name: "apple", price: 5000, instock: false },
-//         { id: 3, name: "banana", price: 3000, instock: true },
-//         { id: 4, name: "orange", price: 7000, instock: false },
-//         { id: 5, name: "mango", price: 6000, instock: true }
-//       ];
-            
-//         let op = products.reduce((tota l, curvalue) => total + curvalue.price,0);
-//         console.log(op);
-       
-// let a = document.getElementById("heading");
-// let b = document.getElementById("box1");
-// let c = document.getElementById("btn1");
+// //Filter
+// let answer = products.filter((value, index) => !value.inStock);
+// console.log(answer);
 
-// btn1.addEventListener("click",() =>{
-//   box1.classList.add("boxclass");   
-// console.log("Button was clicked");
+// // //Some
+// let answer = products.some((value, index) => !value.inStock);
+// console.log(answer);
+
+// let output = arr.some((value, index) => value > 6);
+// console.log(output);
+
+// //every
+// let answer = products.every((value, index) => !value.inStock);
+// console.log(answer);
+
+// let output = arr.every((value, index) => value > 6);
+// console.log(output);
+
+//foreach
+//it cannot return array
+// let answer = products.forEach((value, index) => !value.inStock);
+// console.log(answer);
+
+// let output = arr.forEach((value, index) => value * 2);
+// console.log(output);
+
+//map
+// let answer = products.map((value, index) => value.inStock);
+// console.log(answer);
+
+// let output = arr.map((value, index) => value * 2);
+// console.log(output);
+
+// let answer = products.map((value, index) => value.name);
+// let display = document.createElement("h2");
+// display.innerText = answer;
+// document.body.prepend(display);
+
+//REDUCE
+
+//map
+// let output = arr.reduce((accum, curvalue) => accum + curvalue);
+// console.log(output);
+
+// let answer = products.reduce((total, curvalue) => total + curvalue.price, 0);
+// console.log(answer); //Single Return
+
+// let heading = document.getElementById("heading");
+// let box = document.getElementById("box1");
+// let btn = document.getElementById("btn");
+
+// btn.style.backgroundColor = "aqua";
+// btn.style.padding = "12px 16px";
+// btn.style.border = "none";
+// btn.style.borderRadius = "6px";
+// btn.style.cursor = "pointer";
+
+// btn.addEventListener("click", () => {
+//   btn.style.backgroundColor = "blue";
+//   btn.style.color = "white";
+//   console.log("clicked");
 // });
 
-// btn1.addEventListener("mouseover",() =>{
-//   btn1.style.transform = "scale(1.1)";
-//   heading.innerText = "who let the dog out"; 
-// });
-// btn1.addEventListener("mouseout",() =>{
-//   btn1.style.transform = "scale(1)";
-//   heading.innerText = "This is my heading";
+// btn.addEventListener("mouseover", () => {
+//     btn.style.transform = "scale(1.1)";
+//   });
+
+//   btn.addEventListener("mouseout", () => {
+//     btn.style.transform = "scale(1)";
+//   });
+
+// btn.addEventListener('contextmenu',(e)=>{
+//   btn.style.backgroundColor="green";
+
+//   e.preventDefault();
+//   // window.alert("ehhhh");
 // })
 
-// window.addEventListener("contextmenu",(e) =>{
+// //doesnot let to open the inspect menu list
+// window.addEventListener("contextmenu",(e)=>{
+
 //   e.preventDefault();
-// });
+// })
 
+//it shows the coordinate of x and y of mouse clicked
+// window.addEventListener('click',(e)=>{
 
-// btn1.addEventListener("dblclick",() =>{
-//   document.body.style.backgroundcolor = "red";
-//   });
-//   btn1.addEventListener("contextmenu",() =>{
-//   heading.style.backgroundcolor = "black";
-//   });
-
-// let input = document.querySelector("input");
-
-// input.addEventListener("change",(e) =>{
-// console.log(e.target.value);
-// console.log("changing");
-// });
-
-
-// math obj
-
-// let num = 4.7;
-// let ans = Math.round(num);
-// console.log(ans);
-// let now = new Date().getFullYear();
-// console.log(now);
-
-
-// let ip  =  document.getElementById("myinput");
-// let add = document.getElementById("btnadd");
-// let rem = document.getElementById("btnremove");
-
-// const myfunc = () => {
-//   localStorage.setItem("varr",
-//     JSON.stringify([...(localStorage.getItem("varr")? JSON.parse(localStorage.getItem("varr")) : []), ip.value])
-//   );
+// const myFunc = () => {
+//   console.log("I love JS!");
 // };
-// add.addEventListener("click", myfunc);
-// alert(localStorage.getItem("varr"));
 
-// if(localStorage.getItem("varr")){
-//   alert(localStorage.getItem("varr"));
-// }
-// rem.addEventListener("click",() => {
-//   localStorage.removeItem("varr");
-//   // localStorage.Clear(); 
-// });
+//setTimeout
+// setTimeout(() => {
+//   console.log("I love JS!");
+// }, 5000);
 
-  //set timeout
+//setInterval
+// setInterval(() => {
+//   console.log("I love JS!");
+// }, 1000);
 
-  // setTimeout(() => {
-  //   console.log("after 2 seconds");
-  // }, 2000);
+// const intervalID = setInterval(() => {
+//   console.log("I love JS!");
+// }, 1000);
 
+// setTimeout(() => {
+//   clearInterval(intervalID);
+// }, 5000);
 
-  //set interval
+// const Time = () => {
+//   const d = new Date();
+//   const hour = d.getHours();
+//   const minute = d.getMinutes();
+//   const second = d.getSeconds();
+//   console.log(`${hour} : ${minute} : ${second}`);
+// };
 
-  // const intervalID = setInterval(() => {
-  //   console.log("I love js"); 
-  // }, 1000);
+// setInterval(Time, 1000);
 
-  // setTimeout(() =>{
-  //   clearInterval(intervalID);
-  // },5000)
-  // function updateClock(){
-  //   const clock = document.querySelector("#clock");
-  //   const now = new Date();
-  //   const hours= now.getHours().toString().padStart(2,"0");
-  //   const minute= now.getMinutes().toString().padStart(2,"0");
-  //   const second= now.getSeconds().toString().padStart(2,"0");
-  //   clock.innerHTML = `${hours} :${minute}: ${second}`;
-  // }
-  // setInterval(updateClock,10);
-// function person(name,age,adress){
+// const updateClock = () => {
+//   const clock = document.querySelector(".clock");
+//   const now = new Date();
+//   const hour = now.getHours().toString().padStart(2, "0");
+//   const minute = now.getMinutes().toString().padStart(2, "0");
+//   const second = now.getSeconds().toString().padStart(2, "0");
+
+//   clock.innerHTML = `${hour} : ${minute} : ${second}`;
+// };
+
+// setInterval(updateClock, 1000);
+
+//OOP in JAVASCRIPT
+
+// function Person(name, age, address) {
 //   this.name = name;
 //   this.age = age;
-//   this.adress = adress;
-//   this.greeting = function(){
-//     let greet = ` Hello my name is ${name} am at the age of ${age} and I reside in ${this.adress}`;
-// }
-// const p1 = new person("sauvagya",25,"kalimati");
-// const p2 = new person("aryan",20,"chandragiri");
-// console.log(p1);
+//   this.address = address;
+//   this.greeting = function () {
+//     let greet = `Hello, my name is ${this.name}. I am ${this.age} years old, and i live in ${this.address}`;
+//     return greet;
+//   };
 // }
 
+// const person = new Person("Ram ", 21, "Thankot");
+// const person2 = new Person("Hari ", 23, "Kalanki");
 
-function Bankacc(customername,balance = 0 ,acno){
-  this.customername = customername;
-  this.balance = balance;
-  this.acno = Date.now();
-  
-  this.deposit = function(amount){
-    this.balance += amount;
-}
+// console.log(person.greeting());
+// console.log(person2.greeting());
 
-this.withdraw = function(amount){
-  this.balance -= amount};
-}
-// const ramacc = new Bankacc("ram thapa",1000,15345)
-// ramacc.deposit(5000);
-// console.log(ramacc);
+// function BankAccount(customerName, balance = 0) {
+//   this.customerName = customerName;
+//   this.balance = balance;
+//   this.accountNumber = Date.now();
+
+//   this.deposit = function (amount) {
+//     this.balance += amount;
+//   };
+//   this.withdraw = function (amount) {
+//     this.balance -= amount;
+//   };
+// }
+
+// const ramAcc = new BankAccount("Ram", 1000);
+// ramAcc.deposit(4000);
+// ramAcc.withdraw(2000);
+
+// console.log(ramAcc);
+
+// const addForm = document.querySelector("#createAccount");
+// const customerName = document.querySelector("#customerName");
+// const balance = document.querySelector("#balance");
+
+// const deopsitForm = document.querySelector("#deopsitForm");
+// const accountNumber = document.querySelector("#accountNumber");
+// const amount = document.querySelector("#amount");
+
+// const withdrawForm = document.querySelector("#withdrawForm");
+// const wAccountNumber = document.querySelector("#wAccountNumber");
+// const wAmount = document.querySelector("#wAmount");
 
 // let accounts = [];
-// const addform = document.querySelector("#addform");
-// const cname = document.querySelector("#Cname");
-// const initialBalance = document.querySelector("#initialBalance");
 
-// addform.addEventListener("submit", (e) => {
+// addForm.addEventListener("submit", (e) => {
 //   e.preventDefault();
-//   let account = new Bankacc(cname.value, +initialBalance.value);
+//   let account = new BankAccount(customerName.value, +balance.value);
 //   accounts.push(account);
 //   console.log(accounts);
 // });
 
-// const df = document.querySelector("#depositform");
-// const acn = document.querySelector("#acn");
-// const depositAmount = document.querySelector("#depositAmount");
-
-// df.addEventListener("submit", (e) => {
+// deopsitForm.addEventListener("submit", (e) => {
 //   e.preventDefault();
-//   let ac = accounts.find(
-//     (account) => account.acn === +acn.value);
+//   let account = accounts.find(
+//     (account) => account.accountNumber === +accountNumber.value
+//   );
+//   account.deposit(+amount.value);
+//   console.log(accounts);
 // });
-// Define the Bankacc class
-// class Bankacc {
-//   constructor(name, balance) {
-//     this.name = name;
+
+// withdrawForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let account = accounts.find(
+//     (account) => account.accountNumber === +accountNumber.value
+//   );
+//   account.withdraw(+wAmount.value);
+//   console.log(accounts);
+// });
+
+// function BankAccount(customerName, balance = 0) {
+//   this.customerName = customerName;
+//   this.balance = balance;
+//   this.accountNumber = Date.now();
+// }
+
+// const sitaAccount = new BankAccount("Sita Devi", 40000);
+
+// BankAccount.prototype.deposit = function (amount) {
+//   this.balance += amount;
+// };
+
+// BankAccount.prototype.withdraw = function (amount) {
+//   this.balance -= amount;
+// };
+
+// const ramAccount = new BankAccount("Ram ", 5000);
+// ramAccount.deposit(1000);
+// console.log(ramAccount);
+
+// const hariAccount = new BankAccount("Hari Sharan", 5000);
+// hariAccount.deposit(1000);
+// console.log(hariAccount);
+
+// class BankAccount {
+//   constructor(customerName, balance = 0) {
+//     this.customerName = customerName;
 //     this.balance = balance;
-//     this.acn = Bankacc.generateAccountNumber();
+//     this.accountNumber = Math.floor(Math.random() * 10000000000);
 //   }
-
-//   static generateAccountNumber() {
-//     return Math.floor(Math.random() * 1000000);
-//   }
-
 //   deposit(amount) {
 //     this.balance += amount;
 //   }
+//   withdraw(amount) {
+//     this.balance -= amount;
+//   }
 // }
 
-// let accounts = [];
-// const addform = document.querySelector("#addform");
-// const cname = document.querySelector("#Cname");
-// const initialBalance = document.querySelector("#initialBalance");
-
-// addform.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   let account = new Bankacc(cname.value, +initialBalance.value);
-//   accounts.push(account);
-//   console.log(accounts);
-// });
-
-// const df = document.querySelector("#depositform");
-// const acn = document.querySelector("#acn");
-// const depositAmount = document.querySelector("#depositAmount");
-
-// df.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   let ac = accounts.find(
-//     (account) => account.acn === +acn.value
-//   );
-
-//   if (ac) {
-//     ac.deposit(+depositAmount.value);
-//     console.log(ac);
-//   } else {
-//     console.log("Account not found");
+// class CurrentAccount extends BankAccount {
+//   constructor(customerName, balance = 0) {
+//     super(customerName, balance)
 //   }
-// });
-
-// withdrawform.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   let account = accounts.find(account => account.accountno === Number(withdrawno.value));
-//   if (account) {
-//       account.withdraw(+wamount.value);
-//       console.log(accounts);
-//   } else {
-//       console.log("Account not found");
+//   takeBusinessLoan(amount, taxRate){
+//     let ans = amount + (amount * taxRate)/100;
+//     console.log(`Your business loan with interest is: ${ans}`);
 //   }
-// });
+// }
 
-class BankAccount{
-  constructor(name,balance){
-     this.name = name;
-     this.balance = balance;
-     this.accountno = Math.floor(Math.random()1000000);
-  }
-  deposit(amount){
-     this.balance+=amount;
-  }
-  withdraw(amount){
-     this.balance-=amount
-  }
-}
-class currentaccount extends BankAccount {
-constructor(name,balance){
-   super(name,balance);
-}
-takebusinessloan(amount,tax){
-   let ans=amount+(amounttax)/100;
-   console.log("this is a :${ans}");
-}
-}
-class SavingAccount extends BankAccount {
-constructor(name,balance){
-   super(name,balance);
-}
-takepersonalloan(amount,tax){
-   let ans=amount+(amount*tax)/100;
-   console.log("this is a :${ans}");
-}
-}
-const now=new SavingAccount("ram",1000);
-now.deposit(500);
-const bow=new SavingAccount("sam",1000);
-console.log(now,bow);
+// class SavingAccount extends BankAccount {
+//   constructor(customerName, balance = 0) {
+//     super(customerName, balance)
+//   }
+//   takeBusinessLoan(amount, taxRate){
+//     let ans = amount + (amount * taxRate)/100;
+//     console.log(`Your business loan with interest is: ${ans}`);
+//   }
+// }
+
+// // const ramAccount = new BankAccount("Ram ", 5000);
+// const ramAccount = new CurrentAccount("Ram ", 5000);
+// ramAccount.takeBusinessLoan(5000, 13);
+// console.log(ramAccount);
+
+// const nareshAccount = new CurrentAccount("Ram ", 5000);
+// nareshAccount.takeBusinessLoan(5000, 13);
+
+//Encapsulation
+
+// class BankAccount {
+//   customerName;
+//   #balance;
+//   accountNumber;
+//   constructor(customerName, balance = 0) {
+//     this.customerName = customerName;
+//     this.#balance = balance;
+//     this.accountNumber = Math.floor(Math.random() * 10000000000);
+//   }
+
+//   deposit(amount) {
+//     this.#balance += amount;
+//   }
+
+//   withdraw(amount) {
+//     this.#balance -= amount;
+//   }
+//   setBalance(amount){
+//     this.#balance = amount;
+//   }
+//   setBalance(amount){
+//     this.#balance = amount;
+//   }
+
+//   getBalance(){
+//     return this.#balance;
+//   }
+// }
+
+// const jatinAccount = new BankAccount("jatin", 7000);
+// // jatinAccount.#balance = 9000;
+// jatinAccount.setBalance(6000);
+// console.log(jatinAccount);
+// class configure{
+//   static username = "sabrian rai";
+//   static mail = "sabrina@gmail.com";
+// }
+// console.log(configure.mail);
+// for(let i=0;i<5;i++){
+//   let line = "";
+//   for(let j = 0; j<i;j++){
+//     line += j + " ";
+//   }
+//   console.log(line);
+// }
+// console.log("halo")
+// function Display(){
+//   for (let i = 0;i<100;i++){
+//     console.log(i);
+//   }
+// }
+// Display();
+// setTimeout(()=>{
+// alert("I love js");
+// },4000);
+// console.log("omg");
+
+//  call back 
+
+// function sum(a,b){
+//   const ans = a+b;
+//   cb(ans)
+// }
+
+// function Display(result){
+//   const h1=document.createElement("h1");
+//   h1.innerText = `The sum of result is $(result)`;
+//   document.body.append(h1);
+// }
+// sum(4,9,display);
+// Array.foreach(()=>)
+
+//   let arr = [4,5,6,7,8,9,20]
+//   function calc(arr=[]){
+//     let ans = [];
+//     for(let i = 0;i<arr.length;i++){
+//       ans.push(arr[i]*10);
+//   }
+//   console.log(ans);
+// }
+// calculateOverrideValues(arr);
+
+
+// function divide(a){
+//   return a/12;
+// }
+
+// calc(arr,(a)=> a*10)
+
+// arr.forEach((value,index)=>{})
+
+
+
+  // let products=[];
+  // const Addproduct = (cb)=>{
+
+
+  //   setTimeout(() => {
+  //     products.push(
+  //       {id:1,name:"dr martin",price:8000,instock: true},
+  //       {id:2,name:"Air force",price:8000,instock: true}
+  //     );
+  //     console.log(products);
+  //     setTimeout(()=>{
+  //       console.log("call back hell")
+  //     },5000)
+  //     cb();
+  //   }, 4000);
+  // };
+  // Addproduct();
+
+  // const Displayproduct =()=>{
+  //   setTimeout(()=>{
+  //     products.forEach((products)=>{
+  //       const h1 = document.createElement('h1');
+  //     h1.innerText = product.name;
+  //   document.body.append(h1);
+  //   });
+  //   })
+  // }
