@@ -1,0 +1,29 @@
+{
+    "peroson":{
+        "name":"Ram",
+        "age":20,
+        "isMarried":true,
+        "address":{
+            "street":"Kathmandu",
+            "city":"Pokhara",
+            "country":"Nepal"
+        }
+    },
+    "product":{
+        "id":1,
+        "name":"Laptop",
+        "price":10000,
+        "quantity":5,
+        "category":"Electronics"
+    },
+    {
+        "id":2,
+        "name":"Mobile",
+        "price":5000,
+        "quantity":10,
+        "category":"Electronics"
+    }
+}
+function fetch(input: RequestInfo | Url, init?):
+  requestInit):Promise<Response>
+}

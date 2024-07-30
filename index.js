@@ -1093,3 +1093,55 @@ ARRAY
   //   });
   //   })
   // }
+
+  // promise
+   
+//  const res = new Promise((resolve,rejected)=>{
+//     let success = false;
+//     if(success){
+//       resolve("promise is resolved");
+//     }else{
+//       rejected("promise is rejected");
+//     }
+//   })
+//   res.then((param) => console.log(param)).catch((error)=> console.log("errror"));
+
+//   const res = new Promise((resolve, reject) => {
+// rejected("prmis is rejected")
+
+//   })
+
+//   res.then((param) => console.log(param)).catch((error)=> console.log("errror"));
+
+
+// fetch
+
+// const fetchedData = () => {
+//   fetch('https://catfact.ninja/fact')
+//     .then((res) => res.json()) // Parse the response as JSON
+//     .then((data) => { // Log the data
+//       const h1 = document.createElement('h1');
+//       h1.innerText = data.fact; // Access the 'fact' property of the data
+//       document.body.append(h1);
+//     })
+//     .catch((error) => console.log("error:", error)); // Log any errors
+// }
+
+// fetchedData();
+
+const fetchData = async () => {
+  try {
+    const res = await fetch(`https://catfact.ninja/facts`);
+    const data = await res.json();
+    const facts = data.data; // Assuming data.data contains an array of facts
+    facts.forEach((fact, index) => {
+      const h1 = document.createElement('h1');
+      h1.innerText = fact.fact; // Assuming each fact object has a `fact` property
+      document.body.append(h1);
+    });
+  } catch (error) {
+    console.log("error:", error);
+  }
+};
+
+fetchData();
